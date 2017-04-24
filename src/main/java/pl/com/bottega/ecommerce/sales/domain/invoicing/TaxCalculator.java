@@ -3,7 +3,7 @@ package pl.com.bottega.ecommerce.sales.domain.invoicing;
 import pl.com.bottega.ecommerce.sales.domain.productscatalog.ProductType;
 import pl.com.bottega.ecommerce.sharedkernel.Money;
 
-public class TaxCalculator {
+public class TaxCalculator implements ITaxCalculator {
     public Tax calculateTax (ProductType type, Money price){
         TaxCreator creator;
         switch (type) {
